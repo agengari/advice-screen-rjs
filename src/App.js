@@ -27,13 +27,15 @@ function App() {
   }
 
   return (
-    <div className='App'>
-      <div className='Card'>
-        <div className='Advice'>
-          <h3 id="giftAdvice">👧Haloo👦</h3>
-          <h5>Please read this advice, for you🙏</h5>
-          <p>{ advice }</p>
-          <button onClick={fetchAdvice}>Get Another Advice</button>
+    <div className='app'>
+      <div className='card'>
+        <div className='advice'>
+          <p id="giftAdvice">👧Haloo👦</p>
+          <p>Please read this advice, for you🙏</p>
+          <h2 className='heading'>{ advice }</h2>
+          <button onClick={fetchAdvice} className='button'>
+            <span>Get Another Advice</span>
+            </button>
         </div>
       </div>
     </div>
